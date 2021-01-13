@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Транспортен портал | Нов български университет</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+  <!-- Main Nav -->
+  <nav id="main-nav">
+    <div class="wrapper">
+      <!-- Top Menu -->
+      <div class="top-menu">
+        <span class="call-us"><i class="fas fa-phone-alt"></i>Студентски отдел <a href="#">02 8110 180</a></span>
+        <div class="logo">
+          <a href="#"><img src="img/nbu.webp" alt="Нов български университет"></a>
+          <span class="logo-sub-text">Студентската мобилност е наш приоритет</span>
+        </div>
+        <ul class="user-menu">
+          <li><i class="fas fa-user"></i><a href="#">Кандидат-студент</a> <span class="charset">&#124;</span> <a href="#">Вход</a></li>
+          <li><a href="#"><i class="fas fa-heart u-i-hover"></i></a><span class="tooltip">Любими локации на отпътуване</span></li>
+          <li><a href="#"><i class="fas fa-map u-i-hover"></i></a><span class="tooltip">Потребителска карта</span></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Main Menu -->
+    <div class="main-menu">
+      <div class="wrapper">
+        <ul>
+          <li><a href="#">Маршрут</a></li>
+          <li><a href="#">Бригади</a></li>
+          <li><a href="#">Еразъм</a></li>
+          <li><a href="#">Екскурзии</a></li>
+          <li><a href="#">Новини</a></li>
+          <li><a href="#">Събития</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Video Widget -->
+  <section id="video-widget">
+    <video autoplay muted loop id="video">
+      <source src="video/train.mp4" type="video/mp4">
+    </video>
+    <div class="video-gradient"></div>
+    <div class="wrapper">
+      <div class="video-info">
+        <h1>Транспортен портал на<br> Нов български университет</h1>
+        <a href="#" class="btn">Електронни услуги</a>
+        <a href="#" class="btn btn-secondary">Планирай пътуване</a>
+      </div>
+    </div>
+  </section>
+  <!-- Route Widget -->
+  <section id="route-widget">
+    <div class="wrapper">
+      <form action="#" id="route-search">
+        <label for="district">От ж.к.</label>
+        <select name="district" id="district">
+          <option value="#" disabled selected>Избери местоположение</option>
+          <option value="#">Аерогарата</option>
+          <option value="#">Бакърена Ф-ка</option>
+          <option value="#">Банишора</option>
+          <option value="#">Бели Брези</option>
+          <option value="#">Беловодски Път</option>
+          <option value="#">Бенковски</option>
+          <option value="#">Бистрица</option>
+          <option value="#">Божурище</option>
+          <option value="#">Борово</option>
+          <option value="#">Ботунец</option>
+          <option value="#">Бояна</option>
+          <option value="#">Бул. България</option>
+          <option value="#">Бункера</option>
+          <option value="#">Бъкстон</option>
+          <option value="#">Витоша</option>
+          <option value="#">Военна Рампа</option>
+          <option value="#">Враждебна</option>
+          <option value="#">Враня</option>
+          <option value="#">Връбница</option>
+          <option value="#">Гара Искър</option>
+          <option value="#">Гевгелийски</option>
+          <option value="#">Гео Милев</option>
+          <option value="#">Гниляне</option>
+          <option value="#">Горна Баня</option>
+          <option value="#">Горубляне</option>
+          <option value="#">Гоце Делчев</option>
+          <option value="#">Дианабад</option>
+          <option value="#">Дим. Миленков</option>
+          <option value="#">Драгалевци</option>
+          <option value="#">Дружба 1</option>
+          <option value="#">Дружба 2</option>
+          <option value="#">Дървеница</option>
+          <option value="#">Западен Парк</option>
+          <option value="#">Захарна Фабрика</option>
+          <option value="#">Зона Б 18</option>
+          <option value="#">Зона Б 19</option>
+          <option value="#">Зона Б 5</option>
+          <option value="#">Иван Вазов</option>
+          <option value="#">Изгрев</option>
+          <option value="#">Изток</option>
+          <option value="#">Илинден</option>
+          <option value="#">Илиянци</option>
+          <option value="#">Ихтиман</option>
+          <option value="#">Килиите</option>
+          <option value="#">Киноцентър</option>
+          <option value="#">Княжево</option>
+          <option value="#">Красна Поляна</option>
+          <option value="#">Красно Село</option>
+          <option value="#">Кремиковци</option>
+          <option value="#">Кръстова Вада</option>
+          <option value="#">Лагера</option>
+          <option value="#">Левски</option>
+          <option value="#">Левски В</option>
+          <option value="#">Левски Г</option>
+          <option value="#">Лозенец</option>
+          <option value="#">Люлин 1</option>
+          <option value="#">Люлин 10</option>
+          <option value="#">Люлин 2</option>
+          <option value="#">Люлин 3</option>
+          <option value="#">Люлин 4</option>
+          <option value="#">Люлин 5</option>
+          <option value="#">Люлин 6</option>
+          <option value="#">Люлин 7</option>
+          <option value="#">Люлин 8</option>
+          <option value="#">Люлин 9</option>
+          <option value="#">Люлин център</option>
+          <option value="#">Малашевци</option>
+          <option value="#">Малинова Долина</option>
+          <option value="#">Манастирски Ливади</option>
+          <option value="#">Мед. академия</option>
+          <option value="#">Младост 1</option>
+          <option value="#">Младост 1А</option>
+          <option value="#">Младост 2</option>
+          <option value="#">Младост 3</option>
+          <option value="#">Младост 4</option>
+          <option value="#">Мод. предградие</option>
+          <option value="#">Мотописта</option>
+          <option value="#">Мусагеница</option>
+          <option value="#">Надежда 1</option>
+          <option value="#">Надежда 2</option>
+          <option value="#">Надежда 3</option>
+          <option value="#">Надежда 4</option>
+          <option value="#">Надежда 5</option>
+          <option value="#">Надежда 6</option>
+          <option value="#">Обеля</option>
+          <option value="#">Обеля 1</option>
+          <option value="#">Обеля 2</option>
+          <option value="#">Оборище</option>
+          <option value="#">Овча Купел</option>
+          <option value="#">Овча Купел 1</option>
+          <option value="#">Овча Купел 2</option>
+          <option value="#">Орландовци</option>
+          <option value="#">Павлово</option>
+          <option value="#">Панчарево</option>
+          <option value="#">Подуяне</option>
+          <option value="#">Полигона</option>
+          <option value="#">Разсадника</option>
+          <option value="#">Редута</option>
+          <option value="#">Република</option>
+          <option value="#">Света Троица</option>
+          <option value="#">Свобода</option>
+          <option value="#">Сердика</option>
+          <option value="#">Сеславци</option>
+          <option value="#">Симеоново</option>
+          <option value="#">Славия</option>
+          <option value="#">Слатина</option>
+          <option value="#">Стефан Караджа</option>
+          <option value="#">Стрелбище</option>
+          <option value="#">Студентски Град</option>
+          <option value="#">Сухата Река</option>
+          <option value="#">Суходол</option>
+          <option value="#">Толстой</option>
+          <option value="#">Требич</option>
+          <option value="#">Триъгълника</option>
+          <option value="#">Ул. Оборище</option>
+          <option value="#">Факултета</option>
+          <option value="#">Филиповци</option>
+          <option value="#">Фондови Жилища</option>
+          <option value="#">Хаджи Димитър</option>
+          <option value="#">Хиподрума</option>
+          <option value="#">Хладилника</option>
+          <option value="#">Христо Ботев</option>
+          <option value="#">Централна Гара</option>
+          <option value="#">Център</option>
+          <option value="#">Челопечене</option>
+          <option value="#">Чепинци</option>
+          <option value="#">Яворов</option>
+        </select>
+        <label for="hour">Часови диапазон:</label>
+        <select name="hour" id="hour">
+          <option value="#" disabled selected>Избери времеви интервал</option>
+          <option value="#">08:00</option>
+          <option value="#">09:00</option>
+          <option value="#">10:00</option>
+          <option value="#">11:00</option>
+          <option value="#">12:00</option>
+          <option value="#">13:00</option>
+          <option value="#">14:00</option>
+          <option value="#">15:00</option>
+          <option value="#">16:00</option>
+          <option value="#">17:00</option>
+          <option value="#">18:00</option>
+          <option value="#">19:00</option>
+          <option value="#">20:00</option>
+        </select>
+        <input type="submit" value="Покажи" id="search">
+      </form>
+    </div>
+  </section>
+  <!-- Shedule Widget -->
+  <section id="shedule-widget">
+    <div class="wrapper">
+      <div class="bus-schedule-match">
+        <h2>Оптимален маршрут &#62; <span><i class="fas fa-bus"></i></span> Автобусна линия &#8470; <span>45</span></h2>
+        <h2><span><i class="fas fa-clock"></i> 17:02ч.</span></h2>
+      </div>
+      <table class="bus-shedule">
+        <tr>
+          <th>От спирка</th>
+          <th>08:00</th>
+          <th>09:00</th>
+          <th>10:00</th>
+          <th>11:00</th>
+          <th>12:00</th>
+          <th>13:00</th>
+          <th>14:00</th>
+          <th>15:00</th>
+          <th>16:00</th>
+          <th>17:00</th>
+          <th>18:00</th>
+          <th>19:00</th>
+          <th>20:00</th>
+        </tr>
+        <tr>
+          <td>Метростанция Вардар</td>
+          <td>08:25<br>08:55</td>
+          <td>09:30</td>
+          <td>10:05<br>10:38</td>
+          <td>11:08<br>11:36</td>
+          <td>12:03<br>12:31<br>12:59</td>
+          <td>13:27<br>13:55</td>
+          <td>14:22<br>14:50</td>
+          <td>15:10<br>15:29<br>15:47</td>
+          <td>16:05<br>16:23<br>16:41</td>
+          <td>17:17<br>17:35<br>17:53</td>
+          <td>18:11<br>18:29<br>18:47</td>
+          <td>19:05<br>19:23<br>19:42</td>
+          <td>20:01<br>20:17<br>20:39</td>
+        </tr>
+        <tr>
+          <td>бул. Ал. Стамболийски</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>бул. Вардар</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ул. Добротич</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ж.к. Красна поляна</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>Балканкар АД</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ул. Народно хоро</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>НЦ по рехабилитация</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ул. Любляна</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ул. Народен герой</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>ул. Боряна</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr class="university-row">
+          <td>НБУ</td>
+          <td>08:18<br>08:46</td>
+          <td>09:16<br>09:51</td>
+          <td>10:26<br>10:59</td>
+          <td>11:29<br>11:57</td>
+          <td>12:24<br>12:52</td>
+          <td>13:20<br>13:48</td>
+          <td>14:16<br>14:43</td>
+          <td>15:11<br>15:31<br>15:50</td>
+          <td>16:08<br>16:26<br>16:44</td>
+          <td>17:02<br>17:20<br>17:38</td>
+          <td>18:14<br>18:32<br>18:50</td>
+          <td>19:08<br>19:26<br>19:44</td>
+          <td>20:02<br>20:19<br>20:35</td>
+        </tr>
+        <tr>
+          <td>ПГСС</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+        <tr>
+          <td>кв. Овча купел</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+          <td>&#45;</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+  <!-- Route Lines Widget -->
+  <section id="route-lines-widget">
+    <div class="wrapper">
+      <div class="route-line-box">
+        <div class="box-header">
+          <i class="fas fa-bus"></i>
+          <h2>Автобуси</h2>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Автобус &#8470; 45 – спирка до входа на НБУ.</li>
+            <li>Автобус &#8470; 73 – спирка до входа на НБУ.</li>
+            <li>Автобус &#8470; 111 – спирка на Околовръстен път, близо до НБУ.</li>
+            <li>Автобус &#8470; 260 – спирка на Околовръстен път, близо до НБУ.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="route-line-box">
+        <div class="box-header">
+          <i class="fas fa-taxi"></i>
+          <h2>Таксита</h2>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>В посока НБУ от центъра на София приблизителната цена е около 8 лв.</li>
+            <li>Цената от ж.к Надежда и ж.к Люлин и близките райони е около 9 лв.</li>
+            <li>Цената от ж.к. Младост, ж.к Дървеница и близките райони е около 10 лв.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="route-line-box">
+        <div class="box-header">
+          <i class="fas fa-parking"></i>
+          <h2>Паркинг</h2>
+        </div>
+        <div class="box-body">
+          <ul>
+            <li>Щатните преподаватели и служители ползват служебния паркинг срещу входа на НБУ и зад ресторант Artes след изготвяне на пропуск в корпус 1, етаж 2, стая 223, тел. 02 8110 243, в. 12231.</li>
+            <li>Университетският паркинг разполага с безплатни места за инвалиди.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Tours Widget -->
+  <section id="tours-widget">
+    <div class="wrapper">
+      <div class="tours-country-booking">
+        <h2>Студентски екскурзии в страната и чужбина</h2>
+        <a href="#" class="btn">Разгледай каталог</a>
+      </div>
+      <div class="tours-row">
+        <div class="tours-country double">
+          <a href="#">
+            <img src="img/countries/austria.webp" alt="Австрия">
+            <h3>Австрия</h3>
+          </a>
+        </div>
+        <div class="tours-country">
+          <a href="#">
+            <img src="img/countries/germany.webp" alt="Германия">
+            <h3>Германия</h3>
+          </a>
+        </div>
+      </div>
+      <div class="tours-row">
+        <div class="tours-country">
+          <a href="#">
+            <img src="img/countries/netherlands.webp" alt="Нидерландия">
+            <h3>Нидерландия</h3>
+          </a>
+        </div>
+        <div class="tours-country">
+          <a href="#">
+            <img src="img/countries/czech.webp" alt="Чехия">
+            <h3>Чехия</h3>
+          </a>
+        </div>
+        <div class="tours-country">
+          <a href="#">
+            <img src="img/countries/italy.webp" alt="Италия">
+            <h3>Италия</h3>
+          </a>
+        </div>
+      </div>
+      <div class="tours-row revert">
+        <div class="tours-country double">
+          <a href="#">
+            <img src="img/countries/turkey.webp" alt="Турция">
+            <h3>Турция</h3>
+          </a>
+        </div>
+        <div class="tours-country">
+          <a href="#">
+            <img src="img/countries/greece.webp" alt="Гърция">
+            <h3>Гърция</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Main Footer -->
+  <footer id="main-footer">
+    <div class="wrapper">
+      <div class="column">
+        <div class="logo">
+          <a href="#"><img src="img/nbu.webp" alt="Нов български университет"></a>
+          <p>Транспортният портал помага на студенти, които имат затруднения със Софийската пътна мрежа чрез данни в реално време на разписания и маршрути.</p>
+          <p>Студентски екскурзии в страната и чужбина могат да бъдат закупени от курсисти по всяко време на годината от каталога с нови предложения.</p>
+        </div>
+      </div>
+      <div class="column">
+        <h4>Електронни услуги</h4>
+        <ul class="footer-links">
+          <li><a href="#">Бърз маршрут</a></li>
+          <li><a href="#">Съдействие за Бригади</a></li>
+          <li><a href="#">Съдействие за Еразъм</a></li>
+          <li><a href="#">Планиране на пътуване</a></li>
+          <li><a href="#">Каталог екскурзии</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <h4>Администрация</h4>
+        <ul class="footer-links">
+          <li><a href="#">Администрация на Настоятелството</a></li>
+          <li><a href="#">Централна университетска администрация</a></li>
+          <li><a href="#">Централна студентска администрация</a></li>
+          <li><a href="#">Информационен център</a></li>
+          <li><a href="#">Факултети</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Tiny Footer -->
+    <div id="tiny-footer">
+      <div class="wrapper">
+        <p><span class="charset">&#169;</span> 2021 НБУ. Всички права запазени.</p>
+        <ul class="links">
+          <li><a href="#">Карта на сайта</a></li>
+          <li><a href="#">Телефонен указател</a></li>
+          <li><a href="#">Защита на личните данни</a></li>
+          <li><a href="#">Контакти</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

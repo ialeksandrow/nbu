@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --nbu-primary-color: #083F88;
+  --nbu-primary-color-dark: #06326D;
+  --nbu-secondary-color: #3965A0;
+  --nbu-tertiary-color: #EC8E14;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #FFF;
+  background-color: var(--nbu-primary-color-dark);
+}
+
+.wrapper {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+  text-decoration: none;
+  padding: 20px;
+  border: 1px solid var(--nbu-secondary-color);
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFF;
+  transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--nbu-primary-color-dark);
+}
+
+.btn-secondary {
+  border: 1px solid var(--nbu-tertiary-color);
+}
+
+.btn-secondary:hover {
+  background-color: var(--nbu-primary-color-dark);
+}
+
+/* Special Elements */
+.charset {
+  color: var(--nbu-secondary-color);
+}
+
+/* - Scrollbar
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--nbu-secondary-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--nbu-primary-color);
+  border-right: 1px solid var(--nbu-secondary-color);
+  border-left: 1px solid var(--nbu-secondary-color);
+} */
+
+/* Main Nav */
+#main-nav {
+  background-color: var(--nbu-primary-color);
+}
+
+/* - Top Menu & Elements */
+#main-nav .top-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#main-nav i {
+  color: #FFF;
+  background-color: var(--nbu-primary-color-dark);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 32px;
+  vertical-align: middle;
+  transition: color .3s ease-in-out;
+}
+
+#main-nav .u-i-hover:hover {
+  color: var(--nbu-secondary-color);
+}
+
+#main-nav .call-us {
+  margin-top: 20px;
+}
+
+#main-nav .call-us a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #FFF;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--nbu-secondary-color);
+  margin-left: 5px;
+}
+
+#main-nav .call-us i {
+  margin-right: 5px;
+}
+
+#main-nav .logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-nav .logo img {
+  width: 198px;
+  height: 112px;
+}
+
+#main-nav .logo .logo-sub-text {
+  margin-top: 20px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#main-nav .user-menu {
+  list-style: none;
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+#main-nav .user-menu li {
+  position: relative;
+}
+
+#main-nav .user-menu a {
+  text-decoration: none;
+  margin: 0 5px;
+  font-size: 14px;
+  color: #FFF;
+}
+
+#main-nav .tooltip {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  padding: 10px;
+  white-space: nowrap;
+  font-size: 14px;
+  background-color: var(--nbu-primary-color-dark);
+  visibility: hidden;
+}
+
+#main-nav .tooltip::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 17px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--nbu-primary-color-dark) transparent;
+}
+
+#main-nav li:hover .tooltip {
+  visibility: visible;
+}
+
+/* - Main Menu */
+#main-nav .main-menu {
+  border-top: 1px solid var(--nbu-secondary-color);
+  border-bottom: 1px solid var(--nbu-secondary-color);
+}
+
+#main-nav .main-menu ul {
+  list-style: none;
+  display: flex;
+}
+
+#main-nav .main-menu ul a {
+  width: 200px;
+  padding: 20px 0;
+  border-left: 1px solid var(--nbu-secondary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #FFF;
+  transition: background-color .3s ease-in-out;
+}
+
+#main-nav .main-menu ul li:last-of-type a {
+  border-right: 1px solid var(--nbu-secondary-color);
+}
+
+#main-nav .main-menu ul a:hover {
+  background-color: var(--nbu-primary-color-dark);
+}
+
+/* Video Widget */
+#video-widget {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+#video-widget #video {
+  min-width: 100%;
+  min-height: 100%;
+  transform: translateY(-250px);
+}
+
+#video-widget .video-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(8, 63, 136, 1) 40%, rgba(255, 255, 255, 0) 100%);
+}
+
+#video-widget .video-info {
+  position: absolute;
+  top: 30%;
+}
+
+#video-widget .video-info h1 {
+  font-size: 36px;
+  margin-bottom: 60px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+#video-widget .video-info a:first-of-type {
+  margin-right: 30px;
+}
+
+/* Route Widget */
+#route-widget {
+  position: relative;
+  top: -30px;
+}
+
+#route-widget #route-search {
+  height: 60px;
+  padding-left: 20px;
+  border: 1px solid var(--nbu-secondary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nbu-primary-color);
+}
+
+#route-widget #route-search select {
+  height: 58px;
+  padding: 0 40px;
+  border: none;
+  border-right: 1px solid var(--nbu-secondary-color);
+  border-left: 1px solid var(--nbu-secondary-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #FFF;
+  background-color: var(--nbu-primary-color-dark);
+  outline: none;
+  cursor: pointer;
+}
+
+#route-widget #route-search #search {
+  height: 58px;
+  padding: 0 20px;
+  border: none;
+  border-left: 1px solid var(--nbu-secondary-color);
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #FFF;
+  background-color: var(--nbu-primary-color-dark);
+  outline: none;
+  cursor: pointer;
+  transition: color .3s ease-in-out;
+}
+
+#route-widget #route-search select:focus, #route-widget #route-search #search:hover {
+  color: var(--nbu-secondary-color);
+}
+
+/* Shedule Widget */
+#shedule-widget {
+  margin-bottom: 30px;
+}
+
+#shedule-widget .bus-schedule-match {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#shedule-widget .bus-schedule-match h2 {
+  font-size: 36px;
+}
+
+#shedule-widget .bus-schedule-match span {
+  padding: 5px 10px;
+  border: 1px solid var(--nbu-secondary-color);
+  background-color: var(--nbu-primary-color);
+}
+
+#shedule-widget .bus-shedule {
+  width: 100%;
+  border: 1px solid var(--nbu-secondary-color);
+  text-transform: uppercase;
+}
+
+#shedule-widget .bus-shedule th {
+  font-weight: 400;
+  font-size: 18px;
+  text-align: left;
+}
+
+#shedule-widget .bus-shedule th, td {
+  background-color: var(--nbu-primary-color);
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
+#shedule-widget .bus-shedule td {
+  transition: border-color .3s ease-in-out;
+}
+
+#shedule-widget .bus-shedule td:hover {
+  border: 1px solid var(--nbu-tertiary-color);
+}
+
+#shedule-widget .bus-shedule tr:nth-child(even) td {
+  background-color: var(--nbu-primary-color-dark);
+}
+
+#shedule-widget .bus-shedule th:first-of-type {
+  padding-left: 20px;
+}
+
+#shedule-widget .bus-shedule tr, td:first-of-type {
+  padding-left: 20px;
+}
+
+#shedule-widget .bus-shedule .university-row td {
+  border: 1px solid var(--nbu-tertiary-color);
+  background-color: var(--nbu-primary-color-dark);
+}
+
+/* Route Lines Widget */
+#route-lines-widget {
+  margin-bottom: 30px;
+}
+
+#route-lines-widget .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#route-lines-widget .route-line-box {
+  width: 400px;
+  max-height: 500px;
+  border: 1px solid var(--nbu-secondary-color);
+}
+
+#route-lines-widget .route-line-box .box-header {
+  height: 100px;
+  border-bottom: 1px solid var(--nbu-secondary-color);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#route-lines-widget .route-line-box .box-header i {
+  font-size: 36px;
+  height: 100%;
+  width: 100px;
+  border-right: 1px solid var(--nbu-secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--nbu-primary-color);
+  color: #FFF;
+}
+
+#route-lines-widget .route-line-box .box-header h2 {
+  margin: 0 auto;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+#route-lines-widget .route-line-box .box-body {
+  padding: 20px;
+}
+
+#route-lines-widget .route-line-box .box-body ul {
+  list-style: none;
+}
+
+#route-lines-widget .route-line-box .box-body li {
+  margin-bottom: 30px;
+}
+
+#route-lines-widget .route-line-box .box-body li:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Tours Widget */
+#tours-widget {
+  margin-bottom: 30px;
+}
+
+#tours-widget .tours-row {
+  height: 300px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tours-widget .tours-row:last-of-type {
+  margin-bottom: 0;
+}
+
+#tours-widget .tours-country {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--nbu-secondary-color);
+  transition: border-color .3s ease-in-out;
+}
+
+#tours-widget .tours-country:hover {
+  border-color: var(--nbu-tertiary-color);
+}
+
+#tours-widget .tours-country::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(6, 50, 109);
+  opacity: .9;
+  pointer-events: none;
+  z-index: 1;
+  transition: opacity .6s ease-in-out;
+}
+
+#tours-widget .tours-country:hover::after {
+  opacity: .6;
+}
+
+#tours-widget .double {
+  width: 880px;
+  height: 300px;
+}
+
+#tours-widget .revert {
+  flex-direction: row-reverse;
+}
+
+#tours-widget img {
+  width: 100%;
+  height: 100%;
+  transition: transform .6s ease-in-out;
+}
+
+#tours-widget .tours-country:hover img {
+  transform: scale(1.1);
+}
+
+#tours-widget .tours-country h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 2px;
+  color: #FFF;
+}
+
+#tours-widget .tours-country-booking {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tours-widget .tours-country-booking h2 {
+  font-size: 36px;
+}
+
+#tours-widget .tours-country-booking .btn:hover {
+  background-color: var(--nbu-primary-color);
+}
+
+/* Main Footer */
+#main-footer {
+  border-top: 1px solid var(--nbu-secondary-color);
+  background-color: var(--nbu-primary-color);
+}
+
+#main-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#main-footer .wrapper > * + * {
+  margin-top: 30px;
+}
+
+#main-footer .column {
+  width: 400px;
+}
+
+#main-footer .column:first-of-type p:first-of-type {
+  margin: 30px 0 20px 0;
+}
+
+#main-footer .column p {
+  font-size: 14px;
+}
+
+#main-footer .column h4 {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+#main-footer .column ul {
+  list-style: none;
+}
+
+#main-footer .column li {
+  margin-bottom: 20px;
+}
+
+#main-footer .column a {
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  transition: transform .3s ease-in-out;
+}
+
+#main-footer .column * + * a:hover {
+  transform: translateX(15px);
+}
+
+/* - Tiny Footer */
+#tiny-footer {
+  padding: 15px 0;
+  border-top: 1px solid var(--nbu-secondary-color);
+  margin-top: 30px;
+  background-color: var(--nbu-primary-color-dark);
+}
+
+#tiny-footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tiny-footer .wrapper > * + * {
+  margin-top: 0;
+}
+
+#tiny-footer p {
+  font-size: 14px;
+}
+
+#tiny-footer .links {
+  list-style: none;
+  display: flex;
+}
+
+#tiny-footer .links li::after {
+  content: '|';
+  margin: 0 15px;
+  font-size: 14px;
+  color: var(--nbu-secondary-color);
+}
+
+#tiny-footer .links li:last-of-type::after {
+  content: none;
+}
+
+#tiny-footer .links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #FFF;
+}
